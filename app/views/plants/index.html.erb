@@ -15,7 +15,7 @@
 <% @plants.each do |plant| %>
 <ul>
   <li>
-    <%= plant.name %>, <%= plant.size %>
+    <%= link_to "#{plant.name}", plant_path(plant) %>, <%= plant.size %>
   </li>
 </ul>
 <% end %>

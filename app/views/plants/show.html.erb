@@ -1,0 +1,8 @@
+<ul>
+  <li>
+    <%= @plant.name %>, <%= @plant.size %>
+  </li>
+</ul>
+
+<%= link_to 'Edit', edit_plant_path %>
+<%= link_to 'Delete', plant_path, method: :delete %>
